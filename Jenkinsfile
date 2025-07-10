@@ -17,11 +17,11 @@ node {
     stage('Docker Login') {
         echo "Docker Image Tag Name: ${dockerImageTag}"
         sh "docker images"
-        sh "docker login -u jatinkapoor009 -p Muskan@5252"
+        sh "docker login -u jatink9599 -p jatink9599@gmail.com"
     }
     
     stage('Docker Push') {
-        sh "docker tag ${dockerImageTag} jatinkapoor009/myapplication:${env.BUILD_NUMBER}"
-        sh "docker push jatinkapoor009/myapplication:${env.BUILD_NUMBER}"
+        sh "docker tag ${dockerImageTag} jatink9599/myapplication:${env.BUILD_NUMBER}"
+        sh "docker push jatink9599/myapplication:${env.BUILD_NUMBER}"
     }
 }
