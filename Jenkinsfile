@@ -1,6 +1,6 @@
 node {
     def mvnHome = tool 'maven-3.5.2'
-    def dockerImageTag = "devopsexample:${env.BUILD_NUMBER}"
+    def dockerImageTag = "jatinimage:${env.BUILD_NUMBER}"
     
     stage('Clone Repo') {
         git 'https://github.com/jatinkapoor009/cicd_repo.git'
