@@ -3,7 +3,7 @@ node {
     def dockerImageTag = "devopsexample:${env.BUILD_NUMBER}"
     
     stage('Clone Repo') {
-        git 'https://github.com/vikas4cloud/DevOps-Example.git'
+        git 'https://github.com/jatinkapoor009/cicd_repo.git'
     }    
     
     stage('Build Project') {
